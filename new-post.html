@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Write a Blog • Simple Hack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script type="module" src="posts.js"></script>
+</head>
+<body>
+  <div class="container" style="margin-top: 5rem; max-width: 700px">
+    <h2 class="section-title" style="text-align:center">Write Your Thought</h2>
+    <input type="text" id="title" placeholder="Blog Title" class="btn" style="width:100%; margin-bottom: 1rem">
+    <textarea id="content" placeholder="Your message to the world..." class="btn" style="height: 200px; width: 100%;"></textarea>
+    <button id="submit-post" class="btn btn-primary" style="width: 100%; margin-top: 1rem">Submit</button>
+  </div>
+</body>
+</html>

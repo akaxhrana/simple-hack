@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • Simple Hack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script type="module" src="supabase.js"></script>
+</head>
+<body>
+  <div class="container" style="margin-top: 5rem; max-width: 600px; display: flex; gap: 2rem; justify-content:end; flex-wrap: wrap">
+
+    <!-- Login Section -->
+    <div style="flex: 1 1 600px">
+      <h2 class="section-title" style="text-align:center">Login</h2>
+      <p style="text-align:center; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem">
+        Enter your registered email and password to continue.
+      </p>
+      <input type="email" id="email" placeholder="Email address" class="btn" style="margin-bottom: 1rem; width:100%">
+      <input type="password" id="password" placeholder="Password" class="btn" style="margin-bottom: 1rem; width:100%">
+      <button id="login-btn" class="btn btn-primary" style="width: 100%">Login</button>
+    </div>
+
+    <!-- Register Section -->
+    <div style="flex: 1 1 600px">
+      <h2 class="section-title" style="text-align:center">Register</h2>
+      <p style="text-align:center; color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem">
+        New here? Add your email and password to create an account. A confirmation link will be sent to your inbox.
+      </p>
+      <input type="email" id="reg-email" placeholder="Email address" class="btn" style="margin-bottom: 1rem; width:100%">
+      <input type="password" id="reg-password" placeholder="Create a password" class="btn" style="margin-bottom: 1rem; width:100%">
+      <button id="signup-btn" class="btn btn-secondary-register" style="width: 100%;">Sign Up</button>
+    </div>
+
+  </div>
+</body>
+</html>

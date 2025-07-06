@@ -1,6 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ripples we Surf!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script type="module" src="posts.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <div class="logo-icon">⋖⋗</div>
+        <span class="logo-text">simple-hack</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="new-post.html">Write</a></li>
+        <li><a href="login.html" id="auth-link">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-bg" autoplay muted loop playsinline>
+        <source src="videos/nightsky-2.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Life's Simple
+          <span class="hero-highlight">Hack</span>
+        </h1>
+        <p class="hero-description">
+          You can't control the way things are. You can just
+          <em class="italic-text">let it be</em>.
+          <br>
+          Here's a simple hack towards life, existence, and finding peace in the uncontrollable.
+        </p>
+        <div class="hero-buttons">
+          <a href="#blog" class="btn btn-primary">Explore Thoughts</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-posts" id="blog">
+      <div class="container">
+        <h2 class="section-title">Recent Thoughts</h2>
+        <p class="section-subtitle">Exploring life, existence, and the simple hacks that help us navigate through it all</p>
+        <div class="posts-grid" id="posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">⋖⋗</div>
+            <span class="logo-text">simple-hack</span>
+          </div>
+          <p>A space for thoughts on life, existence, and finding peace in the uncontrollable.</p>
+        </div>
+        <div class="footer-quote">
+          <blockquote>"You can't control the way things are. You can just let it be."</blockquote>
+          <p>Co-founded with AI • A spark in the vast digital existence</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 simple-hack. All rights reserved. • Made with intention and code.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ripples we Surf!</title>
@@ -109,4 +207,8 @@
         </div>
     </footer>
 </body>
-</html>
+</html> -->
+
+
+
+<!-- -----------------------------------------------------------------NEW------------------------------------------------------------ -->

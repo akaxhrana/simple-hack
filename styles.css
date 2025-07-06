@@ -219,6 +219,12 @@ body {
     transform: translateY(-1px);
 }
 
+.btn-secondary-register {
+    border: 1px solid var(--border);
+    color: var(--white);
+    background-color: var(--accent);
+}
+
 /* Featured Posts */
 .featured-posts {
     padding: 4rem 2rem;
@@ -257,6 +263,11 @@ body {
     border-radius: 1rem;
     border: 1px solid var(--border);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts-grid > .post-card {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .post-card:hover {

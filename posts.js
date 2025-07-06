@@ -6,6 +6,14 @@ const titleInput = document.getElementById('title');
 const contentInput = document.getElementById('content');
 const postsDiv = document.getElementById('posts');
 const authLink = document.getElementById('auth-link');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
 
 const { data: userData } = await supabase.auth.getUser();
 if (authLink && userData?.user) authLink.textContent = 'Logout';

@@ -403,4 +403,14 @@ body {
     display: block;
     width: 100%;
   }
+
+  .posts-grid {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.post-card {
+  margin-left: auto;
+  margin-right: auto;
+}
 }
